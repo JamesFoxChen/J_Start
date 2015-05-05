@@ -1,5 +1,4 @@
-import java.io.IOException;
-import java.util.ArrayList;
+import net.sf.json.JSONObject;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -24,27 +23,25 @@ public class HttpUtil {
 			request.addHeader("ClientId",
 					"jwjb_6adf2af64a9e460aa96e4ac631ed16d1");
 
-			HttpEntity entity = new StringEntity(
-					"{\"ID\":1,\"Name\":\"James\"}", "UTF-8");
+			GetVoucherListMessage requsetParams=new GetVoucherListMessage();
+			requsetParams.setBid(1);
+			requsetParams.setIsSend(999);
+			JSONObject jsonObject = JSONObject.fromObject(requsetParams);
+			
+			HttpEntity entity = new StringEntity(jsonObject.toString());
+			
+//			HttpEntity entity = new StringEntity(
+//					"{\"ID\":1,\"Name\":\"James\"}", "UTF-8");
 			request.setEntity(entity);
 
 			HttpResponse result = httpClient.execute(request);
 			String json = EntityUtils.toString(result.getEntity(), "UTF-8");
 
 			System.out.println(json);
-			// com.google.gson.Gson gson = new com.google.gson.Gson();
-			// FileInformation[] response = gson.fromJson(json,
-			// FileInformation[].class);
-
-			// System.out.println(response.length);
-			// for(FileInformation file : response)
-			// {
-			// dataFromService.add(file);
-			// System.out.println(file.toString());
-			// }
 
 		} 
-		catch (IOException ex) {
+		catch (Exception ex) {
+			System.out.println(ex.getMessage());
 		}
 //		return dataFromService;
 	}

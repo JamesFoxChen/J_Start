@@ -2,11 +2,18 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/fluent-hc-4.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpclient-4.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpclient-cache-4.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpcore-4.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/json-lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/json-lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/json-lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/json-lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/json-lib/ezmorph-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/json-lib/json-lib-2.2.3-jdk13.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/json-lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpclient/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpclient/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpclient/fluent-hc-4.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpclient/httpclient-4.4.1.jar" sourcepath="C:/Users/Administrator/Desktop/httpcomponents-client-4.4.1-src.zip"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpclient/httpclient-cache-4.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/J_Start/jars/httpclient/httpcore-4.4.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
