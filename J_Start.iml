@@ -30,5 +30,18 @@
         <jarDirectory url="file://$MODULE_DIR$/jars/MyUtils" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/jars/junit" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/jars/junit" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/jars/junit" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/jars/junit" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>

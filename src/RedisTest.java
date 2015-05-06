@@ -1,6 +1,6 @@
 import redis.clients.jedis.Jedis;
 
- class RedisTest {
+ public class RedisTest {
 
 	public static String Simple()
 	{
