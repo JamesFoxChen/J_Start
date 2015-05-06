@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="httpclient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jars/httpclient/commons-codec-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/httpclient/httpcore-4.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/httpclient/httpclient-cache-4.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/httpclient/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/httpclient/fluent-hc-4.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/httpclient/httpclient-4.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
