@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="thirdsrc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/thirdsrc/src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/thirdsrc/httpcomponents-client-4.4.1-src.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
