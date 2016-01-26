@@ -18,5 +18,14 @@
 	<classpathentry kind="lib" path="jars/json-lib/json-lib-2.4-jdk15.jar"/>
 	<classpathentry kind="lib" path="jars/redis/jedis-2.1.0.jar"/>
 	<classpathentry kind="lib" path="jars/MyUtils/MyUtils.jar"/>
+	<classpathentry kind="lib" path="jars/mongodb/bson-3.0.0.jar"/>
+	<classpathentry kind="lib" path="jars/mongodb/mongodb-driver-3.0.0.jar"/>
+	<classpathentry kind="lib" path="jars/mongodb/mongodb-driver-core-3.0.0.jar"/>
+	<classpathentry kind="lib" path="jars/junit/hamcrest-core-1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="jars/junit/hamcrest-core-1.3-sources.jar"/>
+	<classpathentry kind="lib" path="jars/junit/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="jars/junit/junit-4.12-javadoc.jar"/>
+	<classpathentry kind="lib" path="jars/junit/junit-4.12-sources.jar"/>
+	<classpathentry kind="lib" path="jars/junit/junit-4.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

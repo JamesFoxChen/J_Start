@@ -1,18 +1,21 @@
-
+package test;
 import junit.framework.Assert;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
+import RedisDemo.RedisOperate;
 
 /**
  * RedisTest Tester.
  *
  * @author <Authors name>
  * @version 1.0
- * @since <pre>ÎåÔÂ 6, 2015</pre>
+ * @since <pre>ï¿½ï¿½ï¿½ï¿½ 6, 2015</pre>
  */
 public class RedisTestTest {
 
+	private RedisOperate redis=new RedisOperate();
+	
     @Before
     public void before() throws Exception {
     }
@@ -26,10 +29,10 @@ public class RedisTestTest {
      */
     @Test
     public void testSimple() throws Exception {
-        String result = RedisTest.Simple();
+    	
+        String result = redis.SimpleTest();
         org.junit.Assert.assertEquals("bar", result);
-
+        
+        System.out.println(result);
     }
-
-
 } 
