@@ -27,5 +27,6 @@
 	<classpathentry kind="lib" path="jars/junit/junit-4.12-javadoc.jar"/>
 	<classpathentry kind="lib" path="jars/junit/junit-4.12-sources.jar"/>
 	<classpathentry kind="lib" path="jars/junit/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="jars/xml/dom4j-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
