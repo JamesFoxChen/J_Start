@@ -33,7 +33,7 @@ public class MybatisTest {
 		SqlSession session = sessionFactory.openSession();
 		/**
 		 * 映射sql的标识字符串，
-		 * me.gacl.mapping.userMapper是userMapper.xml文件中mapper标签的namespace属性的值，
+		 * MyBatis.userMapper是userMapper.xml文件中mapper标签的namespace属性的值，
 		 * getUser是select标签的id属性值，通过select标签的id属性值就可以找到要执行的SQL
 		 */
 		String statement = "MyBatis.userMapper.getAdminInfo";// 映射sql的标识字符串
