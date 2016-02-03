@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
+import Domain.AdminRightInfo;
 import MyBatis.IAdminInfoMapper;
 import Utils.MyBatisUtil;
 import bean.AdminInfo;
@@ -31,7 +32,17 @@ public class MybatisAnnotationTest {
 		IAdminInfoMapper mapper = sqlSession.getMapper(IAdminInfoMapper.class);
 		List<AdminInfo> bean = mapper.getAll();
 		sqlSession.close();
-		
+
+		System.out.println(bean.size());
+	}
+
+	@Test
+	public void SelectAdminRightInfo() {
+		SqlSession sqlSession = MyBatisUtil.getSqlSession();
+		IAdminInfoMapper mapper = sqlSession.getMapper(IAdminInfoMapper.class);
+		List<AdminRightInfo> bean = mapper.getAdminRightInfo(1);
+		sqlSession.close();
+
 		System.out.println(bean.size());
 	}
 
@@ -39,14 +50,14 @@ public class MybatisAnnotationTest {
 	public void Insert() {
 		SqlSession sqlSession = MyBatisUtil.getSqlSession();
 		IAdminInfoMapper mapper = sqlSession.getMapper(IAdminInfoMapper.class);
-		
+
 		AdminInfo bean = new AdminInfo();
-		bean.setAdminName("Admin"+System.currentTimeMillis());
-        
+		bean.setAdminName("Admin" + System.currentTimeMillis());
+
 		int result = mapper.add(bean);
 		sqlSession.commit();
 		sqlSession.close();
-		
+
 		System.out.println(result);
 	}
 
@@ -54,15 +65,15 @@ public class MybatisAnnotationTest {
 	public void Update() {
 		SqlSession sqlSession = MyBatisUtil.getSqlSession();
 		IAdminInfoMapper mapper = sqlSession.getMapper(IAdminInfoMapper.class);
-		
+
 		AdminInfo bean = new AdminInfo();
 		bean.setId(12);
-		bean.setAdminName("Admin"+System.currentTimeMillis());
-        
+		bean.setAdminName("Admin" + System.currentTimeMillis());
+
 		int result = mapper.update(bean);
 		sqlSession.commit();
 		sqlSession.close();
-		
+
 		System.out.println(result);
 	}
 
@@ -71,11 +82,49 @@ public class MybatisAnnotationTest {
 
 		SqlSession sqlSession = MyBatisUtil.getSqlSession();
 		IAdminInfoMapper mapper = sqlSession.getMapper(IAdminInfoMapper.class);
-        
+
 		int result = mapper.deleteById(12);
 		sqlSession.commit();
 		sqlSession.close();
+
+		System.out.println(result);
+	}
+
+	@Test
+	public void Commit() {
+		SqlSession sqlSession = MyBatisUtil.getSqlSession();
+		IAdminInfoMapper mapper = sqlSession.getMapper(IAdminInfoMapper.class);
+
+		AdminInfo bean = new AdminInfo();
+		bean.setAdminName("James" + System.currentTimeMillis());
+		int result = mapper.add(bean);
+
+		bean = new AdminInfo();
+		bean.setAdminName("Chen" + System.currentTimeMillis());
+		result = mapper.add(bean);
+
+		sqlSession.commit();
+		sqlSession.close();
+
+		System.out.println(result);
+	}
+
+	@Test
+	public void Rollback() {
+		SqlSession sqlSession = MyBatisUtil.getSqlSession();
+		IAdminInfoMapper mapper = sqlSession.getMapper(IAdminInfoMapper.class);
+
+		AdminInfo bean = new AdminInfo();
+		bean.setAdminName("James" + System.currentTimeMillis());
+		int result = mapper.add(bean);
+
+		sqlSession.rollback();
 		
+		bean = new AdminInfo();
+		bean.setAdminName("Chen" + System.currentTimeMillis());
+		result = mapper.add(bean);
+		sqlSession.close();
+
 		System.out.println(result);
 	}
 }

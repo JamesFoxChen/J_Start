@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
+import Domain.AdminRightInfo;
 import bean.AdminInfo;
 
 public interface IAdminInfoMapper {
@@ -30,4 +31,9 @@ public interface IAdminInfoMapper {
     //使用@Delete注解指明deleteById方法要执行的SQL
     @Delete("delete from admininfo where id=#{id}")
     public int deleteById(int id);
+    
+    //使用@Select注解指明getById方法要执行的SQL
+    @Select("select a.id adminId,a.AdminName adminName,b.RightId rightId,b.Created from admininfo a"+
+            " inner join adminright b on a.ID=b.AdminId where a.ID=#{adminId}")
+    public List<AdminRightInfo> getAdminRightInfo(int adminId);
 }
