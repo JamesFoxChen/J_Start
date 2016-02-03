@@ -1,15 +1,15 @@
 package bean;
 
 public class AdminInfo {
-	private String id;
+	private int id;
 
 	private String adminName;
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

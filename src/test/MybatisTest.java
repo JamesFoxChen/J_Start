@@ -93,7 +93,7 @@ public class MybatisTest {
 
         String statement = "MyBatis.adminInfoMapper.updateAdminInfo";
         AdminInfo adminInfo= new AdminInfo();
-        adminInfo.setId("5");
+        adminInfo.setId(5);
         adminInfo.setAdminName("MyInfo2");
         
         //执行插入操作
