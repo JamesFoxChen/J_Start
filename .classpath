@@ -31,5 +31,6 @@
 	<classpathentry kind="lib" path="jars/jdbc/mysql-connector-java-5.1.38-bin.jar"/>
 	<classpathentry kind="lib" path="jars/jdbc/mybatis-3.3.0.jar" sourcepath="thirdsrc/mybatis-3.3.0.zip"/>
 	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/joda-time-2.4.jar" sourcepath="thirdsrc/joda-time-2.4-dist.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
