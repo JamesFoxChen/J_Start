@@ -1,4 +1,4 @@
-package test.java;
+package test;
 
 import org.apache.commons.logging.impl.Log4JLogger;
 import org.apache.log4j.Logger;

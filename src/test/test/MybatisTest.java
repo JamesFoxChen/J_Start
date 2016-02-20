@@ -1,4 +1,4 @@
-package test.java;
+package test;
 
 import java.awt.List;
 import java.io.InputStream;

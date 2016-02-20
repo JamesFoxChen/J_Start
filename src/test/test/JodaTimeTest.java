@@ -1,4 +1,4 @@
-package test.java;
+package test;
 import org.joda.time.DateTime;
 import org.junit.Test;
 

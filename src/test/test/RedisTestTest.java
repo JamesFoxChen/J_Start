@@ -1,4 +1,4 @@
-package test.java;
+package test;
 
 import utils.*;
 import org.junit.After;
