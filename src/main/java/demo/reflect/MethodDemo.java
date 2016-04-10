@@ -20,6 +20,22 @@ public class MethodDemo {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		Class cs = String.class;
+		Method[] methods = cs.getDeclaredMethods();//本类和父类的公共方法
+		for (Method item : methods) {
+			Class<?>[] methodType = item.getParameterTypes();
+			String name = item.getName();
+			Class returnType=item.getReturnType();
+			int modify=item.getModifiers();  //修饰符
+			System.out.print(modify+" "+returnType.getName()
+								+" "+name+"(");
+			for(Class<?> paramsType:methodType)
+			{
+				System.out.print(paramsType.getName()+",");
+			}
+			System.out.println(")");
+		}
 	}
 }
 
